@@ -42,7 +42,7 @@ import {FormControl} from "@angular/forms";
 
       <br /><br />
       <div class="row">
-        <div class="col">
+        <div class="col" id="resultsMessage">
           <h4 class="txt-bold">Results: {{ convertedStockPrice }}</h4>
         </div>
       </div>
@@ -51,6 +51,10 @@ import {FormControl} from "@angular/forms";
   styles: [`
     .txt-bold, label {
       font-weight: bold;
+    }
+    #resultsMessage {
+      border: 1px solid green;
+      background-color: lightgreen;
     }
     h2 {
       color: darkgreen;
