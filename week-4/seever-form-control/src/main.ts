@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  main.ts
+; Author: Jake Seever
+; Date:   03 August 2019
+; Description: Form control Angular example
+;===========================================
+*/
+
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
