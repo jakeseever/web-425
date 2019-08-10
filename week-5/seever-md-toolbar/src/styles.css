@@ -1,0 +1,14 @@
+/* --
+============================================
+; Title:  style.css
+; Author: Jake Seever
+; Date:   10 August 2019
+; Description: CSS for the md toolbar example.
+;===========================================
+-- */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+
+body { margin: 0; }
