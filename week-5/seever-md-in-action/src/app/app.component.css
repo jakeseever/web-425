@@ -1,0 +1,28 @@
+/* --
+============================================
+; Title:  app.component.css
+; Author: Jake Seever
+; Date:   10 August 2019
+; Description: CSS for the md login example.
+;===========================================
+-- */
+
+/* Global Styles */
+.wrapper { width: 100%; margin-top: 10%; }
+a {text-decoration: none; color: white;}
+
+/* Flex Styles */
+.parent { min-height: 500px; }
+.left { background-color: darkgreen; width: 25%; }
+.right { background-color:white; width: 75%; }
+h2 {text-align: center; color: darkgreen; margin-top: 4%;}
+
+/* Form Styles */
+.frm-login { width: 80%;  margin: 0 auto; }
+.frm-login-panel { border: 2px solid black; margin-top: 10% }
+.frm-login-header { background-color: green; }
+.frm-login-toolbar { background-color: green; color: white; }
+.frm-login-body { display: flex; flex-direction: column; margin-top: 15px; }
+.btn-login { background-color: green; color: white; }
+.frm-login-actions { text-align: right; }
+
