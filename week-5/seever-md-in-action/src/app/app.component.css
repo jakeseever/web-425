@@ -1,0 +1,15 @@
+/* --
+============================================
+; Title:  app.component.css
+; Author: Jake Seever
+; Date:   10 August 2019
+; Description: CSS for the md login example.
+;===========================================
+-- */
+
+/* Flex Styles */
+.parent { height:100px; }
+.left { background-color: cyan; width: 25%; }
+.right { background-color: yellow; width: 75%; }
+/* Global Styles */
+.wrapper { width: 100%; margin-top: 10%; }
