@@ -1,0 +1,68 @@
+<!--
+============================================
+; Title:  app.component.html
+; Author: Jake Seever
+; Date:   17 August 2019
+; Description: App component HTML file for the onchange events example.
+;===========================================
+-->
+
+<div class="wrapper">
+  <!--Angular md-toolbar -->
+  <mat-toolbar class="menu" role="header" color="dark">
+    <mat-toolbar-row>
+      <button mat-button class="toolbar__icon-button mat-button">
+        <mat-icon>web</mat-icon>
+        <span style="margin-left: 5px !important;">WEB 425</span>
+      </button>
+      <button mat-button class="mat-button">
+        About
+      </button>
+      <button mat-button class="mat-button">
+        Contact Us
+      </button>
+      <div fxFlex></div>
+
+      <!-- User Profile -->
+      <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>perm_contact_calendar</mat-icon>
+          <span>My Profile</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div class="greetingRow" fxLayout="row">
+    <mat-sidenav-container class="left"></mat-sidenav-container>
+    <div class="right" fxFlex>
+        <div class="parent">
+          <h1>Angular OnChange() Events Example</h1>
+          <mat-card id="topCard">
+            <h2>Parent</h2>
+            <div class="label">
+              Greeting: <input type="text" [(ngModel)]="myGreeting">
+            </div>
+
+            <div class="label">
+              User Name: <input type="text" [(ngModel)]="myUser.name">
+            </div>
+          </mat-card>
+          <mat-card id="bottomCard">
+            <app-child [greeting]="myGreeting" [user]="myUser"></app-child>
+          </mat-card>
+        </div>
+    </div>
+  </div>
+</div>

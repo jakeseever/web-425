@@ -1,0 +1,26 @@
+/* --
+============================================
+; Title:  app.component.css
+; Author: Jake Seever
+; Date:   17 August 2019
+; Description: CSS for the app component onchange events example.
+;===========================================
+-- */
+
+/* Global Styles */
+.greetingRow { width: 100%; }
+a {text-decoration: none; color: white;}
+
+/* Flex Styles */
+.parent { min-height: 500px; background-color: burlywood; padding: 1%;}
+.left { background-color: darkgreen; width: 25%; }
+.right { background-color:white; width: 75%; }
+
+
+/* Form and Card Styles */
+mat-card {width: 80%; margin: auto; margin-top: 5%; padding: 2%;}
+#bottomCard { margin-top: 6%; background-color: green;}
+h3 {text-align: center; color: darkgreen; margin-top: 2%;}
+h4 {width: 50%; text-align: center;}
+h1 { text-align: center;}
+.label { margin-top: 3%;}
