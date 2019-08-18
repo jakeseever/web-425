@@ -1,0 +1,23 @@
+/* --
+============================================
+; Title:  app.component.css
+; Author: Jake Seever
+; Date:   17 August 2019
+; Description: App component CSS for the input properties example.
+;===========================================
+-- */
+
+/* Global Styles */
+.wrapper { width: 100%; }
+a {text-decoration: none; color: white;}
+
+/* Flex Styles */
+.parent { min-height: 500px; }
+.left { background-color: darkgreen; width: 25%; }
+.right { background-color:white; width: 75%; }
+h3 {text-align: center; color: darkgreen; margin-top: 4%;}
+h4 {width: 50%; text-align: center;}
+
+/* Form Styles */
+input {margin-left:30%;}
+
