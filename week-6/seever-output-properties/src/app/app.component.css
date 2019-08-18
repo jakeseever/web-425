@@ -1,0 +1,24 @@
+/* --
+============================================
+; Title:  style.css
+; Author: Jake Seever
+; Date:   17 August 2019
+; Description: CSS for the output properties example.
+;===========================================
+-- */
+
+/* Global Styles */
+.wrapper { width: 100%; }
+a {text-decoration: none; color: white;}
+
+/* Flex Styles */
+.parent { min-height: 500px; }
+.left { background-color: darkgreen; width: 25%; }
+.right { background-color:white; width: 75%; }
+
+
+/* Form and Card Styles */
+h3 {text-align: center; color: darkgreen; margin-top: 4%;}
+h4 {width: 50%; text-align: center;}
+span {margin-left: 37%; }
+app-price-quote {text-align: center; }
