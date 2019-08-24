@@ -1,0 +1,14 @@
+/* --
+============================================
+; Title:  style.css
+; Author: Jake Seever
+; Date:   23 August 2019
+; Description: CSS for the form validation example.
+;===========================================
+-- */
+
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+body { margin: 0; }
