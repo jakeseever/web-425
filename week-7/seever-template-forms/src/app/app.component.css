@@ -25,3 +25,4 @@ h1 { text-align: center;}
 .label { margin-top: 3%;}
 .form-example {display: flex; flex-direction: column;}
 .form-example > * {width: 65%;}
+.btn-submit { width: 20px; float: right;}
