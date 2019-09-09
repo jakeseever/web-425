@@ -1,0 +1,41 @@
+<!--
+============================================
+; Title:  invoice.component.html
+; Author: Jake Seever
+; Date:   01 September 2019
+; Modified By: Jake Seever
+; Modified Date: 08 September 2019
+; Description: Invoice Component HTML file for BCRS.
+;===========================================
+-->
+
+<div class="container">
+<h2 mat-dialog-title>Invoice Summary</h2>
+
+<p>Date: {{curDate | date:'yyyy-MM-dd'}}</p>
+
+<mat-dialog-content>
+
+    <p class="invoiceItem" *ngIf="order.pwReset.selected">{{order.pwReset.name}} ${{order.pwReset.price}}</p>
+    <p class="invoiceItem" *ngIf="order.spywareRemoval.selected">{{order.spywareRemoval.name}} ${{order.spywareRemoval.price}}</p>
+    <p class="invoiceItem" *ngIf="order.ramUpgrade.selected">{{order.ramUpgrade.name}} ${{order.ramUpgrade.price}}</p>
+    <p class="invoiceItem" *ngIf="order.softwareInstall.selected">{{order.softwareInstall.name}} ${{order.softwareInstall.price}}</p>
+    <p class="invoiceItem" *ngIf="order.tuneUp.selected">{{order.tuneUp.name}} ${{order.tuneUp.price}}</p>
+    <p class="invoiceItem" *ngIf="order.keyboardCleaning.selected">{{order.keyboardCleaning.name}} ${{order.keyboardCleaning.price}}</p>
+    <p class="invoiceItem" *ngIf="order.diskCleanUp.selected">{{order.diskCleanUp.name}} ${{order.diskCleanUp.price}}</p>
+
+    <p *ngIf="order.parts.selected">{{order.parts.name}} ${{order.parts.price}}</p>
+    <p *ngIf="order.labor.selected">{{order.labor.name}} ${{order.labor.price}}</p>
+
+    <br/>
+
+    <p><strong>Total Charges: ${{order.total.price}}</strong></p>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="confirm" mat-raised-button color="warn" (click)="confirm()">Confirm</button>
+</mat-dialog-actions>
+
+<h4>Thank you for trusting Bob's for all of your repair needs!</h4>
+</div>

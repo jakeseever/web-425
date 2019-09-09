@@ -1,0 +1,67 @@
+<!--
+============================================
+; Title:  invoice.component.html
+; Author: Jake Seever
+; Date:   01 September 2019
+; Modified By: Jake Seever
+; Modified Date: 07 September 2019
+; Description: Services Component HTML file for BCRS.
+;===========================================
+-->
+
+<div class="form-container">
+    <mat-card class="form-card mat-elevation-z8" fxLayout="row">
+
+      <br />
+
+      <form class="form" #f="ngForm" (ngSubmit)="onSubmit(f.value); f.reset()">
+
+        <mat-card-content>
+          <h2>Services</h2>
+
+          <div class="checkGroup" ngModelGroup="checkGroup">
+            <mat-checkbox name="pwReset" ngModel>Password Reset ($39.99)</mat-checkbox>
+            <br/>
+            <mat-checkbox name="spywareRemoval" ngModel>Spyware Removal ($99.99)</mat-checkbox>
+            <br/>
+            <mat-checkbox name="ramUpgrade" ngModel>RAM Upgrade ($129.99)</mat-checkbox>
+            <br/>
+            <mat-checkbox name="softwareInstall" ngModel>Software Installation ($49.99)</mat-checkbox>
+            <br/>
+            <mat-checkbox name="tuneUp" ngModel>Tune-up ($89.99)</mat-checkbox>
+            <br/>
+            <mat-checkbox name="keyboardCleaning" ngModel>Keyboard Cleaning ($49.99)</mat-checkbox>
+            <br/>
+            <mat-checkbox name="diskCleanUp" ngModel>Disk Clean-up ($149.99)</mat-checkbox>
+            <br/>
+          </div>
+
+          <br/>
+
+          <h2>Standard Fees</h2>
+
+          <div class="form-container">
+            <div>
+            <label for="parts">Parts: </label>
+              <mat-form-field>
+                <input type="number" id="parts" [(ngModel)]="parts" matInput name="parts" placeholder="Enter a Value..." >
+              </mat-form-field>
+            </div>
+
+            <div>
+            <label for="parts">Labor: </label>
+              <mat-form-field>
+                <input type="number" id="labor" matInput name="labor" [(ngModel)]="labor" placeholder="Hours of Labor at $50.00...">
+              </mat-form-field>
+            </div>
+         </div>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button mat-raised-button color="accent" type="submit" click="openInvoiceDialog()">Calculate</button>
+          <br/>
+        </mat-card-actions>
+
+      </form>
+    </mat-card>
+  </div>

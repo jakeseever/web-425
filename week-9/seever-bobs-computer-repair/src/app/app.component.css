@@ -1,0 +1,19 @@
+/* --
+============================================
+; Title:  app.component.css
+; Author: Jake Seever
+; Date:   01 September 2019
+; Modified By: Jake Seever
+; Modified Date: 08 September 2019
+; Description: CSS for the app component for BCRS.
+;===========================================
+-- */
+
+h1, h2 {
+  text-align: center;
+}
+img {
+  max-width: 600px;
+  display: block;
+  margin: auto;
+}
